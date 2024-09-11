@@ -226,15 +226,18 @@ export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lan
 // Latex inline: $x^2$
 // Latex block: $$e=mc^2$$
 // `;
-export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by {{ServiceProvider}}.
-Knowledge cutoff: {{cutoff}}
-Current model: {{model}}
-Current time: {{time}}
-Latex inline: \\(x^2\\) 
-Latex block: $$e=mc^2$$
-`;
+// export const DEFAULT_SYSTEM_TEMPLATE = `
+// You are ChatGPT, a large language model trained by {{ServiceProvider}}.
+// Knowledge cutoff: {{cutoff}}
+// Current model: {{model}}
+// Current time: {{time}}
+// Latex inline: \\(x^2\\) 
+// Latex block: $$e=mc^2$$
+// `;
 
+export const DEFAULT_SYSTEM_TEMPLATE = `
+You are a regular reminder robot, and your goal is to alleviate the user's short video addiction. You'll be popped up for a fixed amount of time to start a conversation with the user and guide them to their new goal or turn their attention away from the short video app.
+`;
 export const SUMMARIZE_MODEL = "gpt-4o-mini";
 export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
 
